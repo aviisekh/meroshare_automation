@@ -96,9 +96,9 @@ describe('Meroshare Automation', () => {
         }).click();
 
 
-
-        cy.get(".company-list .company-name span[tooltip='Company Name']").contains(data.companyName).should('be.visible');
-        cy.get(".company-list").contains(data.companyName).parents('.company-list').within(() => {
+        const companyName = data.companyName.replace(/\s+/g, ' ').trim();
+        cy.get(".company-list .company-name span[tooltip='Company Name']").contains(companyName).should('be.visible');
+        cy.get(".company-list").contains(companyName).parents('.company-list').within(() => {
           cy.get(".action-buttons button").click()
         });
 
