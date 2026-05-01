@@ -86,3 +86,7 @@ The automation is configured to run through GitHub Actions. It supports multiple
 
 ### Automation in Action
 ![Demo]("./../demo.gif").
+
+## Rails Multi-Account Portal
+
+See `RAILS_PORTAL_BLUEPRINT.md` for a Rails architecture to manage multiple MeroShare profiles and schedule Cypress runs per profile.
